@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* -----------------Navbar-Main-Section---------------------- */
+.main-container {
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid #000; */
+  background-image: url(./Tesla-image/M3-Homepage-Desktop-LHD.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 1px;
+  /* box-sizing: border-box; */
+}
+.nav-parent {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+nav {
+  height: 8vh;
+  width: 96%;
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+.logo {
+  height: 150px;
+  width: 150px;
+  /* border: 1px solid #000; */
+  font-family: "Montserrat", sans-serif;
+}
+.LogoImg {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-list1 {
+  height: 7vh;
+  width: 650px;
+  /* border: 1px solid #000; */
+  position: relative;
+}
+.nav-list1 ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid #000; */
+  align-items: center;
+  height: 100%;
+}
+.nav-list1 ul li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+.nav-list1 ul li a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  /* white-space: nowrap; */
+  z-index: 10;
+}
+.toltip {
+  position: absolute;
+  height: 30px;
+  width: max-content;
+  left: 2%;
+  border: 1px solid #000;
+  background-color: white;
+  text-align: center;
+  line-height: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 0px 5px;
+  visibility: hidden;
+}
+.tol-efect:hover .toltip {
+  transition: all 0.3s linear 0.8s;
+  visibility: visible;
+}
+.tol-efect::before {
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 90px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background-color: rgba(128, 128, 128, 0.165);
+  opacity: 0;
+}
+.tol-efect:hover.tol-efect::before {
+  transition: all 0.3s;
+  animation: slide 0.2s linear;
+  opacity: 1;
+}
+@keyframes slide {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 40%;
+  }
+}
+.nav-list2 {
+  width: 220px;
+  /* border: 1px solid #000; */
+}
+.menu-box {
+  position: absolute;
+  height: 5vh;
+  width: 70px;
+  /* border: 1px solid #000; */
+  text-align: center;
+  right: 10px;
+  top: 10px;
+  display: none;
+}
+.menu-box h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 5vh;
+  border-radius: 4px;
+  background-color: rgba(128, 128, 128, 0.165);
+}
+.model-content {
+  height: max-content;
+  width: 300px;
+  /* border: 1px solid #000; */
+  margin: auto;
+  margin-top: 8vh;
+  text-align: center;
+}
+.model-content h1 {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.model-content p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.btn-box {
+  height: 30vh;
+  width: 550px;
+  /* border: 1px solid #000; */
+  margin: auto;
+  margin-top: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.btn1 {
+  padding: 12px 60px;
+  background-color: #3d4044;
+  color: white;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+}
+.btn2 {
+  background-color: #e7e8e7;
+  color: black;
+}
+.arrow-box {
+  height: 5vh;
+  width: 50px;
+  /* border: 1px solid #000; */
+  margin: auto;
+  margin-top: 8vh;
+  text-align: center;
+}
+.arrow-box i {
+  /* margin-top: 8vh; */
+  font-size: 20px;
+  color: #393c41;
+  transition: all 1s linear;
+  animation: updown 2s linear infinite;
+}
+
+@keyframes updown {
+  0% {
+    margin-top: 0%;
+  }
+  30% {
+    margin-top: 4%;
+  }
+  50% {
+    margin-top: 12%;
+  }
+  70% {
+    margin-top: 8%;
+  }
+  100% {
+    margin-top: 18%;
+  }
+}
+/* <!-- --------------ModelY-Section------------------- --> */
+.model-y {
+  background-image: url(./Tesla-image/Desktop-ModelY.jpeg);
+}
+/* <!-- ------------ModelS-Section------------------- --> */
+.Tesla {
+  background-image: url(./Tesla-image/Homepage-Model-S-Desktop-LHD.jpeg);
+}
+/* <!-- ------------Modelx-Section------------------- --> */
+.model-x {
+  background-image: url(./Tesla-image/Homepage-Model-X-Desktop-LHD.jpeg);
+}
+/* <!-- ------------Solar-Panel-Section------------------- --> */
+.s-panel {
+  background-image: url(./Tesla-image/_25-HP-SolarPanels-D.jpeg);
+}
+.solar-content h1 {
+  font-weight: 500;
+}
+.solar-content p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+/* <!-- ------------Solar-Roof-Section------------------- --> */
+.s-roof {
+  background-image: url(./Tesla-image/Homepage-SolarRoof-Desktop-Global.jpeg);
+}
+.roof-content h1 {
+  font-weight: 500;
+}
+.roof-content p {
+  margin-top: 20px;
+  font-size: 15px;
+}
+/* <!-- ------------Accessories-Section------------------- --> */
+.accessories {
+  background-image: url(./Tesla-image/dd739764-bcaa-4263-9488-8c73bc9fb046.jpeg);
+}
+.acesories-content {
+  margin-top: 18vh;
+}
+.footer-para {
+  text-align: center;
+  margin-top: 8vh;
+  color: #5c5e62;
+  text-shadow: 2px 2px 7px green, 3px 3px 5px red;
+}
+/* ----------------Media-Query-Start------------------ */
+@media (max-width: 1100px) {
+  .nav-list1 {
+    display: none;
+  }
+  .nav-list2 {
+    display: none;
+  }
+  .menu-box {
+    display: block;
+  }
+}
+@media (max-width: 560px) {
+  .btn-box {
+    width: max-content;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25vh;
+  }
+  .model-content {
+    width: max-content;
+  }
+}
